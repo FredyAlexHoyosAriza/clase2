@@ -6,9 +6,24 @@
 import java.util.Scanner;
 public class Ejercicio1 {
     public static void main(String[] args) throws Exception {
+
+        //Ejemplo declaracion de constante
+        // Las dependencias que faltan para declarar constantes maiven las completa. Al no ser este un proyecto MAIVEN se marca un error
+        // public static final int CONSTANTE = 100;
         System.out.println("Por favor ingrese su dia, mes y año de nacimiento: ");
         Scanner sc = new Scanner(System.in);
         int [] birthday= {sc.nextInt(), sc.nextInt(), sc.nextInt()}; // birthday: {day, month, year}
+        // String bd = sc.nextLine(); // birthday
+        // String[] dayMonthYear = bd.split("/", 5);
+        // int day = Integer.parseInt(dayMonthYear[0]);
+        // int month = Integer.parseInt(dayMonthYear[1]);
+        // int year = Integer.parseInt(dayMonthYear[2]);
+        // String dateSum = Integer.toString(day+month+year);
+        // // String dateSum = day+month+year+""; // Otra forma de convertir a String
+        // int lN = 0; //luckyNumber
+        // for(int i=0; i<dateSum.length(); i++) {
+        //     lN += Character.getNumericValue(dateSum.charAt(i));
+        // }
         sc.close();
         int ln = luckynumber(birthday);
         System.out.println("Su numero de la suerte es: " + ln);
